@@ -1,0 +1,14 @@
+.content {
+    border-radius: 5px;
+    padding: 0px 5px;
+    height: 92vh;
+    overflow: hidden;
+    @apply bg-theme-2 flex-1 pb-10;
+    @media (max-width: $md) {
+        @apply px-4 max-w-full;
+    }
+    &:before {
+        content: "";
+        @apply w-full h-px block;
+    }
+}
