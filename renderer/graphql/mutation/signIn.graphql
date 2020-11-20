@@ -1,0 +1,13 @@
+mutation SignIn ($data: SignInInput!) {
+  userSignIn(data: $data) {
+    user {
+      id
+      username
+      fullname
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

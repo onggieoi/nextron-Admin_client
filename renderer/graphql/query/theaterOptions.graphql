@@ -1,0 +1,6 @@
+query TheaterOptions ($location: String!) {
+  theaterOptions (location: $location) {
+    id
+    name
+  }
+}

@@ -1,1 +1,1 @@
-declare module '@redq/reuse-modal';
+declare module 'react-notifications';

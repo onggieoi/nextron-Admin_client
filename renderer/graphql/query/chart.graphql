@@ -1,0 +1,6 @@
+query Chart {
+  chart {
+    month
+    price
+  }
+}

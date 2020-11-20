@@ -1,0 +1,8 @@
+query Transactions {
+  transactions {
+    user
+    location
+    price
+    date
+  }
+}

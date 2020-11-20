@@ -1,0 +1,15 @@
+query ListSchedules ($data: QuerySchedulesInput!) {
+  ListSchedules(data: $data) {
+    id
+    time
+    movie {
+      id
+      name
+      thumbnail
+      duration
+    }
+    theater {
+      name
+    }
+  }
+}

@@ -1,15 +1,21 @@
 .table {
-    @apply w-full text-left;
+    @apply w-full text-left bg-theme-50 p-5 rounded-lg;
+
     th {
-        @apply font-bold text-sm px-3 py-1;
-        @media xl {
-            @apply px-5 py-3
-        }
+        @apply font-medium px-5 py-3;
     }
+
     td {
-        @apply text-base text-center px-1 py-1 overflow-hidden;
-        @media xl {
-            @apply px-5 py-3 mb-2
+        @apply px-5 py-3;
+    }
+
+    &.table--sm {
+        th {
+            @apply px-4 py-2;
+        }
+
+        td {
+            @apply px-4 py-2;
         }
     }
 }

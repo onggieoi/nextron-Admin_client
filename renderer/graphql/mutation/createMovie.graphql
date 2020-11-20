@@ -1,0 +1,3 @@
+mutation CreateMovie ($data: CreateMovieInput!) {
+  createMovie(data: $data)
+}

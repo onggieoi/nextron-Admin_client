@@ -1,0 +1,7 @@
+query GeneralReport {
+  generalReport {
+    movies
+    total
+    users
+	}
+}

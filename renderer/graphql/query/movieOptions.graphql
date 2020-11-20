@@ -1,0 +1,6 @@
+query MoviesOption {
+  moviesOption {
+    id
+    name
+  }
+}

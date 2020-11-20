@@ -1,14 +1,14 @@
 {
   "private": true,
-  "name": "my-nextron-app",
-  "description": "My application description",
+  "name": "dashboard-admin",
   "version": "1.0.0",
-  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "author": "quangduccao <onggieoi@gmail.com>",
   "main": "app/background.js",
   "scripts": {
     "dev": "nextron",
     "build": "nextron build",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "gengraphql": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "electron-serve": "^1.0.0",
@@ -51,6 +51,17 @@
     "tailwindcss": "^1.5.2",
     "typescript": "^4.0.5",
     "webpack": "4.44.0",
-    "yup": "^0.29.2"
+    "yup": "^0.29.2",
+    "@types/recharts": "^1.8.16",
+    "react-image-file-resizer": "^0.3.8",
+    "react-notifications": "^1.7.2",
+    "react-responsive-carousel": "^3.2.10",
+    "react-select": "^3.1.0",
+    "recharts": "^1.8.5",
+    "@graphql-codegen/cli": "1.18.0",
+    "@graphql-codegen/typescript": "1.17.11",
+    "@graphql-codegen/typescript-operations": "1.17.8",
+    "@graphql-codegen/typescript-react-apollo": "2.0.7",
+    "@types/react-select": "^3.0.19"
   }
 }

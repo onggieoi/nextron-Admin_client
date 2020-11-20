@@ -1,0 +1,11 @@
+query Movies {
+  movies {
+    id
+    name
+    duration
+    isShow
+    images {
+      url
+    }
+  }
+}

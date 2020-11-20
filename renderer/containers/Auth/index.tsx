@@ -1,18 +1,26 @@
 import React, { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { NotificationContainer } from 'react-notifications';
 
-import { AuthContext } from 'contexts/auth/auth.context';
+import { AuthContext } from 'contexts/Auth';
 
 const Auth: React.FC<any> = ({ children }) => {
-  const { authState } = useContext(AuthContext);
-  const router = useRouter();
-  useEffect(() => {
-    if (!authState.isAuthenticated) {
-      router.push('/login');
-    }
-  }, [authState]);
+	const { isAuth } = useContext(AuthContext);
 
-  return children;
+	const router = useRouter();
+
+	useEffect(() => {
+		if (!isAuth) {
+			router.push('/login');
+		}
+	}, [isAuth]);
+
+	return (
+		<>
+			<NotificationContainer />
+			{children}
+		</>
+	)
 };
 
 export default Auth;

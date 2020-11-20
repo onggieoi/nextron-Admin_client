@@ -1,0 +1,22 @@
+query Schedule ($id: Int!) {
+  schedule (id: $id ) {
+    schedule {
+      id
+      time
+      location
+      price
+      scheduleDate {
+        date
+      }
+      theater {
+        id
+        name
+      }
+      movie {
+        id
+        name
+      }
+    }
+    error
+  }
+}
