@@ -33,17 +33,15 @@ if (isProd) {
 
 (async () => {
   await electron__WEBPACK_IMPORTED_MODULE_0__.app.whenReady();
-  const mainWindow = (0,_helpers__WEBPACK_IMPORTED_MODULE_2__.createWindow)('main', {
-    width: 1000,
-    height: 600
-  });
+  const mainWindow = (0,_helpers__WEBPACK_IMPORTED_MODULE_2__.createWindow)('main', {});
+  mainWindow.maximize();
+  mainWindow.removeMenu();
 
   if (isProd) {
     await mainWindow.loadURL('app://./index.html');
   } else {
     const port = process.argv[2];
-    await mainWindow.loadURL(`http://localhost:${port}`);
-    mainWindow.webContents.openDevTools();
+    await mainWindow.loadURL(`http://localhost:${port}`); // mainWindow.webContents.openDevTools();
   }
 })();
 
@@ -80,8 +78,8 @@ __webpack_require__.r(__webpack_exports__);
     name
   });
   const defaultSize = {
-    width: options.width,
-    height: options.height
+    width: options.maxWidth,
+    height: options.maxHeight
   };
   let state = {};
   let win;
