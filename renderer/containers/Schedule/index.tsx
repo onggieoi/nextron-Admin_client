@@ -62,8 +62,8 @@ const ScheduleContainer = () => {
           <div className='ml-auto w-64 z-40'>
             <Select
               placeholder="Choose Cinema"
-              options={cinemaOptions}
-              onChange={(c) => {
+              options={ cinemaOptions }
+              onChange={ (c) => {
                 setCinema(c?.['value']);
               }
               }
@@ -75,27 +75,27 @@ const ScheduleContainer = () => {
           </div>
           <DatePicker
             className='input border ml-1 w-32 z-50 mr-10'
-            selected={date}
-            onChange={(date: any) => setFilter(date)}
+            selected={ date }
+            onChange={ (date: any) => setFilter(date) }
           />
 
-          <div className="w-auto">
+          {/* <div className="w-auto">
             <div className="w-56 relative text-gray-700">
               <input type="text" placeholder="Search..."
                 className="input w-56 box pr-10 placeholder-theme-13" />
               <Search className="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="intro-y col-span-12">
-          <Table Cols={cols} Data={dataTable} type={'schedule'} />
+          <Table Cols={ cols } Data={ dataTable } type={ 'schedule' } />
         </div>
       </div>
 
       {
         loading && (
-          <div className='absolute' style={{ top: 10, left: '50%' }}>
+          <div className='absolute' style={ { top: 10, left: '50%' } }>
             <Loading />
           </div>
         )

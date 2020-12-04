@@ -66,13 +66,13 @@ const CustomersPage = () => {
             <button className=" text-white bg-theme-100 shadow-md mr-2 px-5 py-2 rounded-md">Add New Movie</button>
           </Link>
 
-          <div className="w-full sm:w-auto mt-3 ml-auto">
+          {/* <div className="w-full sm:w-auto mt-3 ml-auto">
             <div className="w-56 relative text-gray-700">
               <input type="text" placeholder="Search..."
                 className="input w-56 box pr-10 placeholder-theme-13" />
               <Search className="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="intro-y col-span-12 overflow-auto lg:overflow-visible">
